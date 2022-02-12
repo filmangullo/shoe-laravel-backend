@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Search;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,9 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified', 'isadmin'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('test', function() {
+
+
+
+});
